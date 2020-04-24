@@ -1,0 +1,62 @@
+
+</!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<script>
+$(document).ready(function() {
+   $('input[type="checkbox"]').click(function() {
+       if($(this).attr('id') == 'watch-me') {
+            $('#cat-filter-mobiles-and-tablets').show(); 
+            $('#cat-main').hide();        
+       }
+       if($(this).attr('id') == 'watch-me') {
+            $('#cat-filter-fashion').show(); 
+            $('#cat-main').hide();         
+       }
+       if($(this).attr('id') == 'watch-me') {
+            $('#cat-filter-computers-laptops-and-gaming').show();           
+            $('#cat-main').hide();
+       }
+       if($(this).attr('id') == 'watch-me') {
+            $('#cat-filter-tv-audio-video-and-movies').show();
+            $('#cat-main').hide();         
+       }
+       if($(this).attr('id') == 'watch-me') {
+            $('#cat-filter-home-furnishing-and-decor').show();
+            $('#cat-main').hide();          
+       }
+       if($(this).attr('id') == 'watch-me') {
+            $('#cat-filter-beauty-and-health').show();
+            $('#cat-main').hide();           
+       }
+       else {
+            $('#cat-filter-fashion').hide();
+            $('#cat-filter-computers-laptops-and-gaming').hide(); 
+            $('#cat-filter-mobiles-and-tablets').hide();
+            $('#cat-filter-tv-audio-video-and-movies').hide();
+            $('#cat-filter-home-furnishing-and-decor').hide();
+            $('#cat-filter-beauty-and-health').hide();
+            $('#main').show();   
+       }
+   });
+});
+</script>
+<form id='form-id'>
+<input id='watch-me' name='test' type='checkbox' /> Show Div<br />
+<input name='test' type='checkbox' /><br />
+<input name='test' type='checkbox' />
+ </form>
+ <div id='show-me' style='display:none'>Hello</div>
+  <div id='main'>HHHHHHHHHH</div>
+
+</body>
+</html>
